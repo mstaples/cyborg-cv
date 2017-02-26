@@ -30,65 +30,85 @@
         ]); ?>
     </script>
 </head>
-<body class="index">
+<body class="left-sidebar">
 
 
-<div id="page-wrapper">
-
-    <!-- Header -->
-    <header id="header" class="alt">
-        <h1 id="logo"><a href="{{ url('/') }}">M Staples</a></h1>
-        <nav id="nav">
-            @section('upper_nav')
-                <ul>
-                    <li><a href="{{ url('contact') }}" class="button special">Contact</a></li>
-                </ul>
-            @show
-        </nav>
-    </header>
-
-    <!-- Banner -->
-    <section id="banner" style="background-image: url('{{ asset('css/images/light-bl.svg') }}'), url({{ asset('css/images/light-br.svg') }}), url('{{ asset('css/images/overlay.png') }}'), url('{{ asset('images/banners/'.$banner) }}')">
-
-        <!--
-            ".inner" is set up as an inline-block so it automatically expands
-            in both directions to fit whatever's inside it. This means it won't
-            automatically wrap lines, so be sure to use line breaks where
-            appropriate (<br />).
-        -->
-        <div class="inner">
-            @section('upper_content')
-                <header>
-                    <h2>Ranting</h2>
-                </header>
-                <p>Sometimes you just<br/>
-                    have to get it out<br/>
-                    to move on.</p>
-                <footer>
-                    <ul class="buttons vertical">
-                        <li><a href="{{ url('rant') }}" class="button fit scrolly">Read Rant</a></li>
-                    </ul>
-                </footer>
-            @show
-        </div>
-
-    </section>
-
+<div id="page-wrapper" style="background-image: url('{{ asset('css/images/light-bl.svg') }}'), url({{ asset('css/images/light-br.svg') }}), url('{{ asset('css/images/overlay.png') }}')">
     <!-- Main -->
     <article id="main">
-        <div class="outerlay">
-            @section('overlay')
-                <div class="overlay">
-                </div>
-            @show
+        <!-- Header -->
+        <header id="header" class="alt" style="margin-bottom: 10px">
+            <h1 id="logo"><a href="{{ url('/') }}">M Staples</a></h1>
+            <nav id="nav">
+                @section('upper_nav')
+                    <ul>
+                        <li><a href="{{ url('contact') }}" class="button special">Contact</a></li>
+                    </ul>
+                @show
+            </nav>
+        </header>
+        <div style="clear:both; height: 20px;"></div>
 
-            @section('lower_nav')
-            @show
-            @section('lower_content')
-                <header class="special container">
-                </header>
-            @show
-        </div>
+        <header class="special container" style="background-image: url('{{ asset('css/images/light-bl.svg') }}'), url({{ asset('css/images/light-br.svg') }}), url('{{ asset('css/images/overlay.png') }}'), url('{{ asset('images/banners/'.$banner) }}'); margin-bottom: 2em; color: white">
+            <span class="icon fa-cogs"></span>
+            <h2><strong>Margaret Staples</strong></h2>
+            <p>01100011 01111001 01100010 01101111 01110010 01100111</p>
+        </header>
+
+        <!-- One -->
+        <section class="wrapper style4 container">
+
+            <div class="row 150%">
+                <div class="4u 12u(narrower)">
+
+                    <!-- Sidebar -->
+                    <div class="sidebar">
+                        <section>
+                            <header>
+                                <h3>Magna Feugiat</h3>
+                            </header>
+                            <p>Sed tristique purus vitae volutpat commodo suscipit amet sed nibh. Proin a ullamcorper sed blandit. Sed tristique purus vitae volutpat commodo suscipit ullamcorper commodo suscipit amet sed nibh. Proin a ullamcorper sed blandit..</p>
+                            <footer>
+                                <ul class="buttons">
+                                    <li><a href="#" class="button small">Learn More</a></li>
+                                </ul>
+                            </footer>
+                        </section>
+
+                        <section>
+                            <a href="#" class="image featured"><img src="images/pic03.jpg" alt="" /></a>
+                            <header>
+                                <h3>Amet Lorem Tempus</h3>
+                            </header>
+                            <p>Sed tristique purus vitae volutpat commodo suscipit amet sed nibh. Proin a ullamcorper sed blandit. Sed tristique purus vitae volutpat commodo suscipit ullamcorper sed blandit lorem ipsum dolore.</p>
+                            <footer>
+                                <ul class="buttons">
+                                    <li><a href="#" class="button small">Learn More</a></li>
+                                </ul>
+                            </footer>
+                        </section>
+                    </div>
+
+                </div>
+                <div class="8u 12u(narrower) important(narrower)">
+
+                    <!-- Content -->
+                    <div class="content">
+                        <section>
+                            <a href="#" class="image featured"><img src="images/pic02.jpg" alt="" /></a>
+                            <header>
+                                <h3>Dolore Amet Consequat</h3>
+                            </header>
+                            <p>Aliquam massa urna, imperdiet sit amet mi non, bibendum euismod est. Curabitur mi justo, tincidunt vel eros ullamcorper, porta cursus justo. Cras vel neque eros. Vestibulum diam quam, mollis at consectetur non, malesuada quis augue. Morbi tincidunt pretium interdum. Morbi mattis elementum orci, nec dictum massa. Morbi eu faucibus massa. Aliquam massa urna, imperdiet sit amet mi non, bibendum euismod est. Curabitur mi justo, tincidunt vel eros ullamcorper, porta cursus justo. Cras vel neque eros. Vestibulum diam.</p>
+                            <p>Vestibulum diam quam, mollis at consectetur non, malesuada quis augue. Morbi tincidunt pretium interdum. Morbi mattis elementum orci, nec dictum porta cursus justo. Quisque ultricies lorem in ligula condimentum, et egestas turpis sagittis. Cras ac nunc urna. Nullam eget lobortis purus. Phasellus vitae tortor non est placerat tristique. Sed id sem et massa ornare pellentesque. Maecenas pharetra porta accumsan. </p>
+                            <p>In vestibulum massa quis arcu lobortis tempus. Nam pretium arcu in odio vulputate luctus. Suspendisse euismod lorem eget lacinia fringilla. Sed sed felis justo. Nunc sodales elit in laoreet aliquam. Nam gravida, nisl sit amet iaculis porttitor, risus nisi rutrum metus, non hendrerit ipsum arcu tristique est.</p>
+                        </section>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        
     </article>
 
     <section id="cta" style="background-image: url('{{ asset('css/images/light-tl.svg') }}'), url('{{ asset('css/images/light-tr.svg') }}'), url('{{ asset('css/images/overlay.png') }}'), url('{{ asset('images/banners/'.$banner) }}')">
