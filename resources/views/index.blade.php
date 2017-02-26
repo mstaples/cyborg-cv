@@ -1,9 +1,5 @@
 @extends('layouts.default')
 
-@section('upper_nav')
-    @parent
-@endsection
-
 @section('upper_content')
     <header>
         <h2>M.Staples</h2>
@@ -38,5 +34,4 @@
             <li><a href="{{ url('printable') }}" target="_blank" class="button">Print CV</a></li>
         </ul>
     </footer>
-    @parent
 @endsection

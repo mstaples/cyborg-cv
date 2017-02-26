@@ -1,5 +1,7 @@
 @extends('layouts.cv')
 
+@include('partials.cv-sidebar')
+
 @section('footer_content')
     <header>
         <h2>Are you <strong>hiring</strong>?</h2>

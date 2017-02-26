@@ -34,19 +34,6 @@
 
 
 <div id="page-wrapper">
-
-    <!-- Header -->
-    <header id="header" class="alt">
-        <h1 id="logo"><a href="{{ url('/') }}">M Staples</a></h1>
-        <nav id="nav">
-            @section('upper_nav')
-                <ul>
-                    <li><a href="{{ url('contact') }}" class="button special">Contact</a></li>
-                </ul>
-            @show
-        </nav>
-    </header>
-
     <!-- Banner -->
     <section id="banner" style="background-image: url('{{ asset('css/images/light-bl.svg') }}'), url({{ asset('css/images/light-br.svg') }}), url('{{ asset('css/images/overlay.png') }}'), url('{{ asset('images/banners/'.$banner) }}')">
 
@@ -95,14 +82,6 @@
         @section('footer_content')
         @show
     </section>
-
-
-    <footer id="footer">
-        <ul class="copyright">
-            <li>&copy;2017 @dead_lugosi</li>
-        </ul>
-    </footer>
-
 </div>
 
 </body>

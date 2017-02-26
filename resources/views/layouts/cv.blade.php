@@ -33,27 +33,17 @@
 <body class="left-sidebar">
 
 
-<div id="page-wrapper" style="background-image: url('{{ asset('css/images/light-bl.svg') }}'), url({{ asset('css/images/light-br.svg') }}), url('{{ asset('css/images/overlay.png') }}')">
+<div id="page-wrapper" style="background-image: url('{{ asset('css/images/overlay.png') }}')">
     <!-- Main -->
     <article id="main">
-        <!-- Header -->
-        <header id="header" class="alt" style="margin-bottom: 10px">
-            <h1 id="logo"><a href="{{ url('/') }}">M Staples</a></h1>
-            <nav id="nav">
-                @section('upper_nav')
-                    <ul>
-                        <li><a href="{{ url('contact') }}" class="button special">Contact</a></li>
-                    </ul>
-                @show
-            </nav>
-        </header>
-        <div style="clear:both; height: 20px;"></div>
 
-        <header class="special container" style="background-image: url('{{ asset('css/images/light-bl.svg') }}'), url({{ asset('css/images/light-br.svg') }}), url('{{ asset('css/images/overlay.png') }}'), url('{{ asset('images/banners/'.$banner) }}'); margin-bottom: 2em; color: white">
+        <a href="{{ url('home') }}" style="text-decoration: none">
+        <header class="special container" style="background-image: url('{{ asset('css/images/overlay.png') }}'), url('{{ asset('images/banners/'.$banner) }}'); margin-bottom: 2em; color: white">
             <span class="icon fa-cogs"></span>
-            <h2><strong>Margaret Staples</strong></h2>
+            <h2><strong>M. Staples</strong></h2>
             <p>01100011 01111001 01100010 01101111 01110010 01100111</p>
         </header>
+        </a>
 
         <!-- One -->
         <section class="wrapper style4 container">
@@ -63,30 +53,7 @@
 
                     <!-- Sidebar -->
                     <div class="sidebar">
-                        <section>
-                            <header>
-                                <h3>Magna Feugiat</h3>
-                            </header>
-                            <p>Sed tristique purus vitae volutpat commodo suscipit amet sed nibh. Proin a ullamcorper sed blandit. Sed tristique purus vitae volutpat commodo suscipit ullamcorper commodo suscipit amet sed nibh. Proin a ullamcorper sed blandit..</p>
-                            <footer>
-                                <ul class="buttons">
-                                    <li><a href="#" class="button small">Learn More</a></li>
-                                </ul>
-                            </footer>
-                        </section>
-
-                        <section>
-                            <a href="#" class="image featured"><img src="images/pic03.jpg" alt="" /></a>
-                            <header>
-                                <h3>Amet Lorem Tempus</h3>
-                            </header>
-                            <p>Sed tristique purus vitae volutpat commodo suscipit amet sed nibh. Proin a ullamcorper sed blandit. Sed tristique purus vitae volutpat commodo suscipit ullamcorper sed blandit lorem ipsum dolore.</p>
-                            <footer>
-                                <ul class="buttons">
-                                    <li><a href="#" class="button small">Learn More</a></li>
-                                </ul>
-                            </footer>
-                        </section>
+                        @yield('sidebar')
                     </div>
 
                 </div>
@@ -110,18 +77,6 @@
         </section>
         
     </article>
-
-    <section id="cta" style="background-image: url('{{ asset('css/images/light-tl.svg') }}'), url('{{ asset('css/images/light-tr.svg') }}'), url('{{ asset('css/images/overlay.png') }}'), url('{{ asset('images/banners/'.$banner) }}')">
-        @section('footer_content')
-        @show
-    </section>
-
-
-    <footer id="footer">
-        <ul class="copyright">
-            <li>&copy;2017 @dead_lugosi</li>
-        </ul>
-    </footer>
 
 </div>
 

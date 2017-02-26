@@ -1,42 +1,43 @@
-@extends('layouts.default')
-
-@section('upper_nav')
-    @parent
-@endsection
-
-@section('upper_content')
-    <header>
-        <h2>M.Staples</h2>
+@section('sidebar')
+<section>
+    <header style="background-image: url('{{ asset('css/images/light-bl.svg') }}'), url({{ asset('css/images/light-br.svg') }}), url('{{ asset('css/images/overlay.png') }}'), url('{{ asset('images/sectionHead05.jpg') }}');">
+        <h3 style="margin:10px; color:white">
+            Cover Letter
+        </h3>
     </header>
-    <p>Personally responsible<br/>
-        sentient cyborg.<br/>
-        Makes code happen.<br/>
-    Has other skills as well.</p>
-    <footer>
-        <ul class="buttons vertical">
-            <li><a href="{{ url('cv') }}" class="button fit scrolly">View Stats</a></li>
-        </ul>
-    </footer>
-@endsection
+    <p>A brief introduction to coming availability and placement goals.</p>
+</section>
 
-
-@section('lower_nav')
-    @parent
-@endsection
-
-@section('lower_content')
-    <img src="{{ asset('images/gifs/'.$gif) }}" class="index-gif">
-@endsection
-
-@section('footer_content')
-    <header>
-        <h2>Are you <strong>hiring</strong>?</h2>
+<section>
+    <header style="background-image: url('{{ asset('css/images/light-bl.svg') }}'), url({{ asset('css/images/light-br.svg') }}), url('{{ asset('css/images/overlay.png') }}'), url('{{ asset('images/sectionHead09.jpg') }}');">
+        <h3 style="margin:10px; color:white">Skills</h3>
     </header>
-    <footer>
-        <ul class="buttons">
-            <li><a href="{{ url('cv') }}" class="button special">Browse CV</a></li>
-            <li><a href="{{ url('printable') }}" target="_blank" class="button">Print CV</a></li>
-        </ul>
-    </footer>
-    @parent
+    <p>An overview of extant skills and knowledges as well as information regarding desired growth areas.</p>
+</section>
+
+<section>
+    <header style="background-image: url('{{ asset('css/images/light-bl.svg') }}'), url({{ asset('css/images/light-br.svg') }}), url('{{ asset('css/images/overlay.png') }}'), url('{{ asset('images/sectionHead07.jpg') }}');">
+        <h3 style="margin:10px; color:white">Work History</h3>
+    </header>
+    <p>Summary history of professional roles, responsibilities, and accomplishments.</p>
+</section>
+
+<section>
+    <header style="background-image: url('{{ asset('css/images/light-bl.svg') }}'), url({{ asset('css/images/light-br.svg') }}), url('{{ asset('css/images/overlay.png') }}'), url('{{ asset('images/sectionHead10.jpg') }}');">
+        <h3 style="margin:10px; color:white">Hire Me</h3>
+    </header>
+    <p>Additional information useful for determining whether I am the right cyborg for your organization.</p>
+</section>
+
+<section>
+    <header style="background-image: url('{{ asset('css/images/light-bl.svg') }}'), url({{ asset('css/images/light-br.svg') }}), url('{{ asset('css/images/overlay.png') }}'), url('{{ asset('images/sectionHead10.jpg') }}');">
+        <h3 style="margin:10px; color:white">
+            <a href="#" target="_blank" title="Github Profile" style="margin-right:5px;"><i class="fa fa-github-alt"></i></a>
+            <a href="#" target="_blank" title="Local PHP Meetup" style="margin-right:5px;"><i class="fa fa-group"></i></a>
+            <a href="#" target="_blank" title="Joind.in Talk Reviews" style="margin-right:5px;"><i class="fa fa-ticket"></i></a>
+            <a href="#" target="_blank" title="Personal Twitter Account" style="margin-right:5px;"><i class="fa fa-twitter"></i></a>
+        </h3>
+    </header>
+    <p><i class="fa fa-envelope-o"></i> margaret.staples@gmail.com</p>
+</section>
 @endsection
