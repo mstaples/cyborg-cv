@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use App\Http\Requests;
 use Illuminate\Http\Request;
 
-class HomeController extends BaseController
+class CvController extends BaseController
 {
     /**
      * Create a new controller instance.
@@ -18,24 +18,34 @@ class HomeController extends BaseController
     }
 
     /**
-     * Show the application dashboard.
-     *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function coverLetter()
     {
-        $gif = 'gif'.rand(1,12).'.gif';
-
-        return view('index')->with([ 'gif' => $gif ]);
+        return view('coverLetter');
     }
 
     /**
-     * Show the rant.
-     *
      * @return \Illuminate\Http\Response
      */
-    public function rant()
+    public function skills()
     {
-        return view('rant');
+        return view('skills');
+    }
+
+    /**
+     * @return \Illuminate\Http\Response
+     */
+    public function work()
+    {
+        return view('work');
+    }
+
+    /**
+     * @return \Illuminate\Http\Response
+     */
+    public function hire()
+    {
+        return view('hire');
     }
 }

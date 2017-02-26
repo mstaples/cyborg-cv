@@ -2,15 +2,11 @@
 
 namespace App\Http\Controllers;
 
-use App\Http\Requests;
-use Illuminate\Http\Request;
-
 class HomeController extends BaseController
 {
     /**
      * Create a new controller instance.
      *
-     * @return void
      */
     public function __construct()
     {
@@ -24,6 +20,26 @@ class HomeController extends BaseController
      */
     public function index()
     {
-        return view('index');
+        $gif = 'gif'.rand(1,12).'.gif';
+
+        return view('index')->with([ 'gif' => $gif ]);
+    }
+
+    public function printable()
+    {
+        $filename = 'cv.pdf';
+        $path = storage_path($filename);
+
+        return Response::make(file_get_contents($path), 200, [
+            'Content-Type' => 'application/pdf',
+            'Content-Disposition' => 'inline; filename="'.$filename.'"'
+        ]);
+    }
+
+    public function contact()
+    {
+        $gif = 'gif'.rand(1,12).'.gif';
+
+        return view('contact')->with([ 'gif' => $gif ]);
     }
 }
