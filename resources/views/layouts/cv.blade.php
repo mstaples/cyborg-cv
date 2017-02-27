@@ -7,6 +7,8 @@
     <meta name="keywords" content="" />
 
     @section('styles')
+        <link href="{{ asset('css/bootstrap.css') }}" rel='stylesheet' type='text/css'>
+        <link href="{{ asset('css/bootstrap-theme.css') }}" rel='stylesheet' type='text/css'>
         <link href='{{ asset('css/font-awesome.min.css') }}' rel='stylesheet' type='text/css'>
         <link href='{{ asset('css/ie8.css') }}' rel='stylesheet' type='text/css'>
         <link href='{{ asset('css/ie9.css') }}' rel='stylesheet' type='text/css'>
@@ -14,6 +16,7 @@
     @show
 
     <script type="text/javascript" src="{{ asset('js/jquery.min.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('js/bootstrap.js') }}"></script>
     <script type="text/javascript" src="{{ asset('js/jquery.dropotron.min.js') }}"></script>
     <script type="text/javascript" src="{{ asset('js/jquery.scrollgress.min.js') }}"></script>
     <script type="text/javascript" src="{{ asset('js/jquery.scrolly.min.js') }}"></script>
@@ -71,6 +74,8 @@
     </article>
 
 </div>
+
+@yield('added-scripts')
 
 </body>
 </html>

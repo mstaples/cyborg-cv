@@ -42,7 +42,9 @@
         <h3 style="margin:10px; color:white">
             <a href="#" target="_blank" title="Github Profile" style="margin-right:5px;"><i class="fa fa-github-alt"></i></a>
             <a href="#" target="_blank" title="Local PHP Meetup" style="margin-right:5px;"><i class="fa fa-group"></i></a>
-            <a href="#" target="_blank" title="Joind.in Talk Reviews" style="margin-right:5px;"><i class="fa fa-ticket"></i></a>
+            <a href="https://joind.in/user/deadlugosi/talks" target="_blank" title="Joind.in Talk Reviews" style="margin-right:5px;">
+                <i class="fa fa-ticket"></i>
+            </a>
             <a href="#" target="_blank" title="Personal Twitter Account" style="margin-right:5px;"><i class="fa fa-twitter"></i></a>
         </h3>
     </header>
