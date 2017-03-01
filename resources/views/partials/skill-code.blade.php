@@ -11,8 +11,7 @@
     <h3 style="margin-bottom: 5px;">Javascript</h3>
     <ul>
         <li><i class="fa fa-language"></i> 10+ years of use</li>
-        <li><i class="fa fa-language"></i> most use with jQuery</li>
-        <li><i class="fa fa-language"></i> have not used for server side logic</li>
+        <li><i class="fa fa-language"></i> client side applications often using jQuery and other libraries</li>
     </ul>
 </section>
 
