@@ -1,7 +1,5 @@
 @extends('layouts.cv')
 
-@include('partials.cv-sidebar')
-
 @section('added-scripts')
     <script>
         $('#workTabs').find('a').click(function (e) {

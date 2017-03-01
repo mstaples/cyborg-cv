@@ -1611,6 +1611,11 @@
 			border-bottom-color: transparent;
 		}
 
+		a.email {
+			text-decoration: none;
+			color: inherit;
+		}
+
 	strong, b {
 		font-weight: 400;
 	}

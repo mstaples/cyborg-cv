@@ -31,10 +31,28 @@
         window.Laravel = <?php echo json_encode([
                 'csrfToken' => csrf_token(),
         ]); ?>
+
+        function copyThis(event) {
+            event.preventDefault();
+            var $temp = $("<input>");
+            $("body").append($temp);
+            $temp.val('<?php echo env('ADMIN_EMAIL') ?>').select();
+            document.execCommand("copy");
+            $temp.remove();
+            window.setTimeout(function () {
+                $("#copied").modal("hide");
+            }, 1800);
+        }
+
+        $(document).ready(function() {
+            $("a.email").click(function(event) {
+                copyThis(event);
+            });
+        });
+
     </script>
 </head>
 <body class="left-sidebar">
-
 
 <div id="page-wrapper" style="background-image: url('{{ asset('css/images/overlay.png') }}')">
     <!-- Main -->
@@ -56,7 +74,7 @@
 
                     <!-- Sidebar -->
                     <div class="sidebar">
-                        @yield('sidebar')
+                        @include('partials.cv-sidebar')
                     </div>
 
                 </div>
@@ -73,6 +91,17 @@
         
     </article>
 
+
+    @include('partials.copied')
+    <footer id="footer">
+        <ul class="copyright">
+            <li>
+                <a href="#" class="email" data-toggle="modal" data-target="#copied">
+                    <i class="fa fa-envelope-o"></i> margaret.staples@gmail.com
+                </a>
+            </li>
+        </ul>
+    </footer>
 </div>
 
 @yield('added-scripts')

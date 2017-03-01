@@ -4,31 +4,28 @@
     Contracted to assist resident engineer in clearing backlog of web (Laravel) related software projects.
     <ul>
         <li>
-            <i class="fa fa-globe"></i> create interaction points between company API and consumer product
+            <i class="fa fa-globe"></i> interaction points between API and consumer product
         </li>
         <li>
-            <i class="fa fa-globe"></i> complete customer creation process forms and functionality
+            <i class="fa fa-globe"></i> customer creation process
         </li>
         <li>
-            <i class="fa fa-globe"></i> complete admin functions and tools
+            <i class="fa fa-globe"></i> admin functions and tools
         </li>
         <li>
             <i class="fa fa-globe"></i> migrate tests from behat to phpunit
         </li>
         <li>
-            <i class="fa fa-globe"></i> expand test coverage on API and consumer projects
+            <i class="fa fa-globe"></i> test coverage on API and consumer projects
         </li>
         <li>
-            <i class="fa fa-globe"></i> create API and consumer auth within project specific constraints
+            <i class="fa fa-globe"></i> custom auth within project specific constraints
         </li>
         <li>
-            <i class="fa fa-globe"></i> implement customer and admin email notifications
+            <i class="fa fa-globe"></i> email notifications
         </li>
         <li>
-            <i class="fa fa-globe"></i> create command for importing extant customer data
-        </li>
-        <li>
-            <i class="fa fa-globe"></i> implement customer input validations
+            <i class="fa fa-globe"></i> input validations
         </li>
     </ul>
 </section>

@@ -1,7 +1,5 @@
 @extends('layouts.cv')
 
-@include('partials.cv-sidebar')
-
 @section('content')
     <section>
         <header style="background-size: cover; background-image: url('{{ asset('images/pic01.jpg') }}'); text-align:center">

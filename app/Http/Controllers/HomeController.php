@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use \Response;
+
 class HomeController extends BaseController
 {
     /**
@@ -27,7 +29,7 @@ class HomeController extends BaseController
 
     public function printable()
     {
-        $filename = 'cv.pdf';
+        $filename = 'app/resources/cv.pdf';
         $path = storage_path($filename);
 
         return Response::make(file_get_contents($path), 200, [
