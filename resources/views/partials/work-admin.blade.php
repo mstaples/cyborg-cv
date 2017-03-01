@@ -19,7 +19,7 @@
             <i class="fa fa-coffee"></i> create documentation for project deployment setup and admin
         </li>
         <li>
-            <i class="fa fa-globe"></i> upgrade Guzzle across multiple bc breaking versions
+            <i class="fa fa-coffee"></i> upgrade Guzzle across multiple bc breaking versions
         </li>
     </ul>
 </section>

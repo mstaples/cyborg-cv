@@ -2,30 +2,30 @@
 
 @include('partials.cv-sidebar')
 
+@section('added-scripts')
+    <script>
+        $('#skillTabs').find('a').click(function (e) {
+            e.preventDefault();
+            $(this).tab('show');
+        });
+    </script>
+@endsection
+
 @section('content')
     <section>
         <header style="background-size: cover; background-image: url('{{ asset('images/pic01.jpg') }}'); text-align:center">
             <h2 style="color:white; padding: 20px;">Skills</h2>
         </header>
     </section>
-    <section>
-        <h3 style="margin-bottom: 5px;">Skill Category</h3>
-        <h4 style="margin-bottom: 5px;">skillset subtitle?</h4>
-        General description of skill category
-        <ul>
-            <li>
-                <i class="fa fa-linux"></i> Particular skill or knowledge
-            </li>
-            <li>
-                <i class="fa fa-linux"></i> Particular skill or knowledge
-                <sup><a href="#" style="text-decoration: none; color: inherit; border: none;" title="Current area of interest / study"><i class="fa fa-book"></i></a></sup>
-            </li>
-            <li>
-                <i class="fa fa-linux"></i> Particular skill or knowledge
-            </li>
-            <li>
-                <i class="fa fa-linux"></i> Particular skill or knowledge
-            </li>
-        </ul>
-    </section>
+
+    <ul class="nav nav-tabs" id="skillTabs" style="margin-bottom:2em;">
+        <li class="active"><a href="#code">Code</a></li>
+        <li><a href="#lib">Tools</a></li>
+        <li><a href="#ppl">Humans</a></li>
+    </ul>
+    <div class="tab-content">
+        <div class="tab-pane active" id="code">@include('partials.skill-code')</div>
+        <div class="tab-pane" id="lib">@include('partials.skill-lib')</div>
+        <div class="tab-pane" id="ppl">@include('partials.skill-ppl')</div>
+    </div>
 @endsection
