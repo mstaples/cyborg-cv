@@ -3,9 +3,6 @@
     The successful pursuit of particular organization goals will require support, resources, and accommodations which would be in addition to these basic requirements to my employment.
     <ul>
         <li>
-            <i class="fa fa-universal-access"></i> lots of money
-        </li>
-        <li>
             <i class="fa fa-universal-access"></i> mostly remote work
         </li>
         <li>

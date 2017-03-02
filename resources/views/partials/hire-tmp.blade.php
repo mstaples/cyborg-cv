@@ -3,9 +3,6 @@
     The successful pursuit of particular organization goals will require support, resources, and accommodations which would be in addition to:
     <ul>
         <li>
-            <i class="fa fa-universal-access"></i> a lot of money
-        </li>
-        <li>
             <i class="fa fa-universal-access"></i> minimum 4 month term
         </li>
         <li>
