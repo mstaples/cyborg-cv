@@ -16,18 +16,12 @@
         </header>
     </section>
 
-    <ul class="nav nav-tabs" id="workTabs" style="margin-bottom:2em;">
-        <li class="active"><a href="#web">Web</a></li>
-        <li><a href="#games">Games</a></li>
-        <li><a href="#other">Other Tech</a></li>
-        <li><a href="#admin">Admin</a></li>
+    <ul class="nav nav-tabs" id="workTabs" style="margin-bottom:1em;">
+        <li class="active"><a href="#work">Employment</a></li>
         <li><a href="#speaking">Speaking</a></li>
     </ul>
     <div class="tab-content">
-        <div class="tab-pane active" id="web">@include('partials.work-web')</div>
-        <div class="tab-pane" id="games">@include('partials.work-games')</div>
-        <div class="tab-pane" id="other">@include('partials.work-other')</div>
-        <div class="tab-pane" id="admin">@include('partials.work-admin')</div>
+        <div class="tab-pane active" id="work">@include('partials.work-jobs')</div>
         <div class="tab-pane" id="speaking">@include('partials.work-speaking')</div>
     </div>
 @endsection

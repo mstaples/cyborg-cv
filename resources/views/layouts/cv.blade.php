@@ -44,9 +44,38 @@
             }, 1800);
         }
 
+        function getCurrentStep(currentJob)
+        {
+            return parseInt(currentJob.replace("job-", ""));
+        }
+
+        function getNextId(currentJob)
+        {
+            var nextStep = getCurrentStep(currentJob) + 1;
+            return 'job-'+nextStep;
+        }
+
+        function getBackId(currentJob)
+        {
+            var backStep = getCurrentStep(currentJob) - 1;
+            return 'job-'+backStep;
+        }
+
         $(document).ready(function() {
             $("a.email").click(function(event) {
                 copyThis(event);
+            });
+
+            $('.active').on('click', 'button.next', function (e) {
+                var next = getNextId($(this).attr("data-job"));
+                $('.jobs').hide();
+                console.log(next + ' is next');
+                $('#'+next).show();
+            }).on('click', 'button.back', function (e) {
+                var back = getBackId($(this).attr("data-job"));
+                $('.jobs').hide();
+                console.log(back + ' is previous');
+                $('#'+back).show();
             });
         });
 
@@ -59,7 +88,7 @@
     <article id="main">
 
         <a href="{{ url('home') }}" style="text-decoration: none">
-        <header class="special container" style="background-image: url('{{ asset('css/images/overlay.png') }}'), url('{{ asset('images/banners/'.$banner) }}'); margin-bottom: 2em; color: white">
+        <header class="special container" style="background-image: url('{{ asset('css/images/overlay.png') }}'), url('{{ asset('images/banners/'.$banner) }}'); margin-bottom: 1.5em; color: white">
             <span class="icon fa-cogs"></span>
             <h2><strong>M. Staples</strong></h2>
             <p>01100011 01111001 01100010 01101111 01110010 01100111</p>

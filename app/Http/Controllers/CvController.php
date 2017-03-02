@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Http\Requests;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
 
 class CvController extends BaseController
 {
@@ -38,7 +39,8 @@ class CvController extends BaseController
      */
     public function work()
     {
-        return view('work');
+        $history = $this->getWorkHistory();
+        return view('work')->with('history', $history);
     }
 
     /**
@@ -47,5 +49,17 @@ class CvController extends BaseController
     public function hire()
     {
         return view('hire');
+    }
+
+    public function getWorkHistory()
+    {
+        $files = [];
+        $directoryString = base_path('resources/views/partials/jobs');
+        foreach(glob($directoryString.'/*.blade.php') as $file) {
+            $files[] = str_replace('.blade.php', '', str_replace($directoryString.'/', '', $file));
+        }
+        rsort($files);
+
+        return $files;
     }
 }
