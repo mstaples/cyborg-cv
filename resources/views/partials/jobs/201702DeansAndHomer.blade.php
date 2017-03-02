@@ -3,8 +3,8 @@
         <i class="fa fa-globe" title="Web Focus"></i>
         <i class="fa fa-coffee" title="Admin Focus"></i>
     </h3>
-    <h4 style="margin-bottom: 0px;">Software Engineer (08/2016 - )</h4>
-    Contracted to assist resident engineer in clearing backlog of web (Laravel) related software projects.
+    <h4 style="margin-bottom: 0px;">Senior Software Engineer (08/2016 - )</h4>
+    Clearing backlog of web related software projects.
     <ul>
         <li>
             <i class="fa fa-globe"></i> interaction points between API and consumer product
