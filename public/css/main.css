@@ -1599,6 +1599,25 @@
 		line-height: 1.75em;
 	}
 
+	#main .sidebar section.selected {
+		border: solid 2px rgba(124, 128, 129, 0.5) !important;
+		border-radius: 5px;
+	}
+
+	#main .sidebar section {
+		padding-top: 8px !important;
+	}
+
+	#main .sidebar p {
+		padding: 0 10px 10px 10px;
+		margin-bottom: 0;
+	}
+
+	#main .sidebar section.option:hover {
+		border-radius: 5px;
+		background: rgba(124, 128, 129, 0.2);
+	}
+
 	a {
 		-moz-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out, background-color 0.2s ease-in-out;
 		-webkit-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out, background-color 0.2s ease-in-out;

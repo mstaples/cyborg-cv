@@ -23,7 +23,7 @@ class CvController extends BaseController
      */
     public function coverLetter()
     {
-        return view('coverLetter');
+        return view('coverLetter')->with('selected', 'cv');
     }
 
     /**
@@ -31,7 +31,7 @@ class CvController extends BaseController
      */
     public function skills()
     {
-        return view('skills');
+        return view('skills')->with('selected', 'skills');
     }
 
     /**
@@ -40,7 +40,7 @@ class CvController extends BaseController
     public function work()
     {
         $history = $this->getWorkHistory();
-        return view('work')->with('history', $history);
+        return view('work')->with([ 'history' => $history, 'selected' => 'work']);
     }
 
     /**
@@ -48,7 +48,7 @@ class CvController extends BaseController
      */
     public function hire()
     {
-        return view('hire');
+        return view('hire')->with('selected', 'hire');
     }
 
     public function getWorkHistory()

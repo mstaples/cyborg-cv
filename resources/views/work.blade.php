@@ -24,4 +24,5 @@
         <div class="tab-pane active" id="work">@include('partials.work-jobs')</div>
         <div class="tab-pane" id="speaking">@include('partials.work-speaking')</div>
     </div>
+
 @endsection

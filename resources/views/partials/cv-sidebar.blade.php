@@ -1,4 +1,4 @@
-<section>
+<section @if( $selected == 'cv') class="selected" @else class="option" @endif>
     <a href="{{ url('cv') }}" class="nav-option" style="text-decoration: none; color: inherit">
     <header style="background-image: url('{{ asset('css/images/light-bl.svg') }}'), url({{ asset('css/images/light-br.svg') }}), url('{{ asset('css/images/overlay.png') }}'), url('{{ asset('images/sectionHead05.jpg') }}');">
         <h3 style="margin:10px; color:white">
@@ -9,16 +9,16 @@
     </a>
 </section>
 
-    <section>
-        <a href="{{ url('skills') }}" class="nav-option" style="text-decoration: none; color: inherit">
-        <header style="background-image: url('{{ asset('css/images/light-bl.svg') }}'), url({{ asset('css/images/light-br.svg') }}), url('{{ asset('css/images/overlay.png') }}'), url('{{ asset('images/sectionHead09.jpg') }}');">
-            <h3 style="margin:10px; color:white">Skills</h3>
-        </header>
-        <p>An overview of extant skills and knowledges as well as information regarding desired growth areas.</p>
-        </a>
-    </section>
+<section @if( $selected == 'skills') class="selected"@else class="option"  @endif>
+    <a href="{{ url('skills') }}" class="nav-option" style="text-decoration: none; color: inherit">
+    <header style="background-image: url('{{ asset('css/images/light-bl.svg') }}'), url({{ asset('css/images/light-br.svg') }}), url('{{ asset('css/images/overlay.png') }}'), url('{{ asset('images/sectionHead09.jpg') }}');">
+        <h3 style="margin:10px; color:white">Skills</h3>
+    </header>
+    <p>An overview of extant skills and knowledges as well as information regarding desired growth areas.</p>
+    </a>
+</section>
 
-<section>
+<section @if( $selected == 'work') class="selected"@else class="option"  @endif>
     <a href="{{ url('work') }}" class="nav-option" style="text-decoration: none; color: inherit">
     <header style="background-image: url('{{ asset('css/images/light-bl.svg') }}'), url({{ asset('css/images/light-br.svg') }}), url('{{ asset('css/images/overlay.png') }}'), url('{{ asset('images/sectionHead07.jpg') }}');">
         <h3 style="margin:10px; color:white">Work History</h3>
@@ -27,7 +27,7 @@
     </a>
 </section>
 
-<section>
+<section @if( $selected == 'hire') class="selected" @else class="option" @endif>
     <a href="{{ url('hire') }}" class="nav-option" style="text-decoration: none; color: inherit">
     <header style="background-image: url('{{ asset('css/images/light-bl.svg') }}'), url({{ asset('css/images/light-br.svg') }}), url('{{ asset('css/images/overlay.png') }}'), url('{{ asset('images/sectionHead10.jpg') }}');">
         <h3 style="margin:10px; color:white">Hire Me</h3>

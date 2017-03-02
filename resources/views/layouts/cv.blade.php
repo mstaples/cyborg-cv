@@ -67,11 +67,17 @@
             });
 
             $('.active').on('click', 'button.next', function (e) {
+                if ($(this).hasClass('disabled')) {
+                    return;
+                }
                 var next = getNextId($(this).attr("data-job"));
                 $('.jobs').hide();
                 console.log(next + ' is next');
                 $('#'+next).show();
             }).on('click', 'button.back', function (e) {
+                if ($(this).hasClass('disabled')) {
+                    return;
+                }
                 var back = getBackId($(this).attr("data-job"));
                 $('.jobs').hide();
                 console.log(back + ' is previous');
@@ -99,7 +105,7 @@
         <section class="wrapper style4 container">
 
             <div class="row 150%">
-                <div class="4u 12u(narrower)">
+                <div class="4u 12u(narrower)" style="padding-top:30px;">
 
                     <!-- Sidebar -->
                     <div class="sidebar">
