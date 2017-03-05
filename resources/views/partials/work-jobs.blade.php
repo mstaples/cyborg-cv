@@ -18,6 +18,13 @@
         <section>
             @include('partials.jobs.'.$name)
         </section>
+        <div class="btn-group pull-left">
+            <button
+                    class="btn btn-default view-all"
+                    title="View All">
+                view all
+            </button>
+        </div>
         <div class="btn-group pull-right">
             <button
                     data-job="job-{{ $id }}"

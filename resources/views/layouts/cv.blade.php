@@ -82,6 +82,11 @@
                 $('.jobs').hide();
                 console.log(back + ' is previous');
                 $('#'+back).show();
+            }).on('click', 'button.view-all', function (e) {
+                $('button.next').hide();
+                $('button.back').hide();
+                $('button.view-all').hide();
+                $('.jobs').show();
             });
         });
 
