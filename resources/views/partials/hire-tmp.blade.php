@@ -44,3 +44,11 @@
         </li>
     </ul>
 </section>
+
+<div style="width:100%; text-align:center">
+    <a href="#" class="email" data-toggle="modal" data-target="#copied">
+        <button class="btn btn-info btn-lg">
+            Hire Me
+        </button>
+    </a>
+</div>
